@@ -40,9 +40,8 @@ In, Ubuntu 20.02 , I configured static IP from interfaces file located in /etc/n
    vi /etc/network/interfaces
 ```
 I assigned the following IP addresses, 
-- **1 Control Node**: 10.28.78.10
-- **4 Managed Nodes**: 10.28.78.20, 10.28.78.30, 10.28.78.40, 10.28.78.50
-
+#### Control Node: 10.28.78.10, user: root
+#### Managed Node: 10.28.78.20, 10.28.78.30, 10.28.78.40, 10.28.78.50,  user: root
 My VM has a single interface and configured as follow. Please replace the IP of your network in address, netmask, gateway and dns-nameservers for the proper configuration. 
 ```bash
 auto lo
