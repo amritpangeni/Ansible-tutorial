@@ -92,3 +92,76 @@ All the managed nodes should be accessbile to ssh form the control node.
 ![alt text](image-2.png)
 
 verify similarly for all the nodes and our lab is ready to start. 
+
+### Step 5: Add managed hosts in ansible hosts file
+The ansible host file for the ubuntu 20.04 is located in **/etc/ansible/hosts** or you can manually create and use your own inventory file.
+In this tutorial, I am using the default one. 
+``` bash
+vi /etc/ansible/hosts
+```
+This is the sample configuration I made for my lab, Please modify the IP address as per your requirement. 
+```bash
+[servers]
+server1 ansible_host=10.28.78.20
+server2 ansible_host=10.28.78.30
+server3 ansible_host=10.28.78.40
+server4 ansible_host=10.28.78.50
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+```
+
+The **[servers]** in the configuration is name for the group of the hosts, You can create different host groups to manage the infrastructure properly, It could be **[web_server]**, **[management_servers]**, etc. servers mentioned in the group can be specifically executed with ansible. I have also gave the name of the servers as server1, server2, It can also be only IP as below. 
+
+```bash
+[web_servers]
+10.28.78.20
+10.28.78.30
+
+[db_servers]
+10.28.78.40
+10.28.78.50
+```
+
+### Step 6: Verify the Inventory File
+This will ping all the hosts mentioned in the inventory file. 
+```bash
+ansible all -m ping
+```
+
+**Expected Output:**
+```bash
+10.28.78.20 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+10.28.78.30 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+10.28.78.40 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+10.28.78.50 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+```
+
+### Key Features of the Lab
+- **Passwordless Authentication**: Simplifies node management with SSH keys.
+- **Flexible Inventory Management**: Group nodes to suit your use case.
+- **Real-world Practice**: Mimics production environments for Ansible learning.
+
+### 🌟 Key Features of the Lab
+- **Passwordless Authentication**: Simplifies node management with SSH keys.
+- **Flexible Inventory Management**: Group nodes to suit your use case.
+- **Real-world Practice**: Mimics production environments for Ansible learning.
+### 📚 Next Steps
+With your lab set up, you can now:
+- **Write simple playbooks to automate tasks.**
+- **Explore Ansible modules for advanced configurations.**
+- **Experiment with roles, templates, and Ansible Vault for secure data handling.**
+
+**Let’s automate and simplify together!**  
