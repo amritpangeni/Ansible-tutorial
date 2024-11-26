@@ -160,6 +160,7 @@ ansible all -m ping
 - **Real-world Practice**: Mimics production environments for Ansible learning.
 ### 📚 Next Steps
 With your lab set up, you can now:
+- **Command Line: Ansible** -> [Lab Setup](../2-AnsibleCommandLine/README.md) 
 - **Write simple playbooks to automate tasks.**
 - **Explore Ansible modules for advanced configurations.**
 - **Experiment with roles, templates, and Ansible Vault for secure data handling.**
