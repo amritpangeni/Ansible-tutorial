@@ -159,10 +159,11 @@ ansible all -m ping
 - **Flexible Inventory Management**: Group nodes to suit your use case.
 - **Real-world Practice**: Mimics production environments for Ansible learning.
 ### 📚 Next Steps
-With your lab set up, you can now:
-- **Command Line: Ansible** -> [Lab Setup](../2-AnsibleCommandLine/README.md) 
-- **Write simple playbooks to automate tasks.**
-- **Explore Ansible modules for advanced configurations.**
-- **Experiment with roles, templates, and Ansible Vault for secure data handling.**
+**With your lab set up, you can now:**
+- Command Line: Ansible -> [Ansible Command Line](../2-AnsibleCommandLine/README.md) 
+- Write simple playbooks to automate tasks.** -> [Ansible Playbooks](../3-AnsiblePlaybook/README.md) 
+- **Explore Ansible modules for advanced configurations. -> [Ansible Playbooks](../3-AnsiblePlaybook/README.md) 
+- Experiment with roles, templates, and Ansible Vault for secure data handling.** -> [Ansible Playbooks](../3-AnsiblePlaybook/README.md) 
+- Real World Hand's on Labs for Ansible Training -> -> [Ansible Labs](../3-Labs/README.md)
 
-**Let’s automate and simplify together!**  
+***Happy Automating!*** 🚀

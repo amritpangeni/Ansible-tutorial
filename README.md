@@ -1,6 +1,6 @@
-# Ansible Learning Hub  
+# Amrit's Ansible Training 
 
-Welcome to the **Ansible Learning Hub**, your one-stop repository for mastering **Ansible configuration management**! Whether you're a beginner or an experienced DevOps professional, this repository is designed to help you build and refine your Ansible skills through structured labs and real-world examples.  
+Welcome to the **Amrit's Ansible Training**, your one-stop repository for mastering **Ansible configuration management**! Whether you're a beginner or an experienced DevOps professional, this repository is designed to help you build and refine your Ansible skills through structured labs and real-world examples.  
 
 ---
 
@@ -48,8 +48,16 @@ Contributions are welcome! If you have suggestions for new labs or improvements 
 
 ## 📚 Resources  
 
-Check out the [Lab Setup](./1-LabSetup/README.md) directory to get started. Ready to dive deeper? Explore the [Labs](./Labs/README.md) section for advanced Ansible use cases!  
+Check out the [Lab Setup](./1-LabSetup/README.md) directory to get started. 
+
+**Ready to dive deeper?**
+
+Explore the [Ansible Commandline](./2-AnsibleCommandLine/README.md) for ansible tool command line use cases. 
+
+Also, [Ansible Playbooks](./3-AnsibleCommandLine/README.md) for writing the ansible scripts playbook. 
+
+And, [Labs](./4-Labs/README.md) section for practicing advanced Ansible real-world use cases!  
 
 ---
 
-**Let’s automate and simplify together!**  
+***Happy Automating!*** 🚀
