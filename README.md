@@ -48,7 +48,7 @@ Contributions are welcome! If you have suggestions for new labs or improvements 
 
 ## 📚 Resources  
 
-Check out the [Lab Setup](./Lab-Setup/README.md) directory to get started. Ready to dive deeper? Explore the [Labs](./Labs/README.md) section for advanced Ansible use cases!  
+Check out the [Lab Setup](./1-LabSetup/README.md) directory to get started. Ready to dive deeper? Explore the [Labs](./Labs/README.md) section for advanced Ansible use cases!  
 
 ---
 
