@@ -7,7 +7,7 @@ Welcome to this step-by-step **Ansible tutorial**! This guide will help you set 
 ## 📋 Prerequisites  
 
 Before we begin, ensure the following requirements are met:  
-1. A system to create virtual machines (e.g., **VMware vCenter**, VirtualBox, AWS, or other platforms).  
+1. A system to create virtual machines (e.g., **VMware vCenter**, VirtualBox, AWS, or other platforms). 
 2. Basic knowledge of networking and Linux commands.  
 3. Ansible installed on the **control node** (we'll guide you through this).  
 
@@ -27,7 +27,10 @@ All virtual machines will be within the **same reachable network** to ensure Ans
 ## ⚙️ Setting Up the Lab  
 
 ### Step 1: Create Virtual Machines  
-1. Use **VMware vCenter** or any platform of your choice to create 5 virtual machines.  
+1. Use **VMware vCenter** or any platform of your choice to create 5 virtual machines.
+   I am using VMware vCenter to create the five virtual machines required to setup the lab. You can create VMs anywhere or also can use physical machines as per your convenience.
+   ![Creating VMs in Vcenter](image-1.png)
+
    - **Control Node**: Install a Linux distribution (e.g., Ubuntu 20.04).  
    - **Managed Nodes**: Install the same or different Linux distributions based on your requirements.  
 2. Assign static IP addresses or configure a DHCP server to ensure the nodes are within the same network or could be in different network but can communicate with each other. 
@@ -56,6 +59,6 @@ Optionally, provide a passphrase for added security.
 Distribute the public SSH key to all managed nodes:
    ``` bash
    ssh-copy-id user@<managed_node_ip>
-Replace user with the username and <managed_node_ip> with the IP address of the managed node. Repeat this for each node.
 
+Replace user with the username and <managed_node_ip> with the IP address of the managed node. Repeat this for each node.
 
