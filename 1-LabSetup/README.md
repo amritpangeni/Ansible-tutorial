@@ -84,3 +84,11 @@ Distribute the public SSH key to all managed nodes:
    ```
 Replace user with the username and <managed_node_ip> with the IP address of the managed node. Repeat this for each node.
 
+
+### Step 4: Verify the password less authentication
+
+All the managed nodes should be accessbile to ssh form the control node. 
+
+![alt text](image-2.png)
+
+verify similarly for all the nodes and our lab is ready to start. 
