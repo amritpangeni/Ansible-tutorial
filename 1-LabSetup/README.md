@@ -38,3 +38,24 @@ All virtual machines will be within the **same reachable network** to ensure Ans
    ```bash
    sudo apt update
    sudo apt install ansible -y
+
+2. Verify the installation. 
+   ```bash
+   ansible --version
+
+### Step 3: Set Up SSH Keys for Passwordless Authentication
+  To allow Ansible to communicate with managed nodes securely, we will set up SSH keys:
+1. Generate SSH Key pair on the control Node. 
+   ```bash
+   ssh-keygen -t rsa -b 4096
+
+Press Enter to accept the default file path (e.g., ~/.ssh/id_rsa).
+Optionally, provide a passphrase for added security.
+
+2. Copy the Public Key to Each Managed Node:
+Distribute the public SSH key to all managed nodes:
+   ``` bash
+   ssh-copy-id user@<managed_node_ip>
+Replace user with the username and <managed_node_ip> with the IP address of the managed node. Repeat this for each node.
+
+
