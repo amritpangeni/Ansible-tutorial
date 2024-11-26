@@ -30,6 +30,7 @@ All virtual machines will be within the **same reachable network** to ensure Ans
 1. Using **VMware vCenter** or any platform of your choice to create 5 virtual machines.
 I am using VMware vCenter to create the five virtual machines required to setup the lab. You can create VMs anywhere or also can use physical machines as per your convenience.
    ![Creating VMs in Vcenter](image-1.png)
+
 I have installed (Ubuntu 20.04) for both control node and managed nodes. I cloned the master node into four more VMs after OS installation and renamed it as Master and Managed Nodes. 
 
 After that, I used the same subnet of network for all the VMs to ensure the connectivity and configured manually in all system as follows. 
@@ -39,8 +40,8 @@ In, Ubuntu 20.02 , I configured static IP from interfaces file located in /etc/n
    vi /etc/network/interfaces
 ```
 I assigned the following IP addresses, 
-   - **Control Node:** 10.28.78.10  
-   - **Managed Nodes:** 10.28.78.20, 10.28.78.30, 10.28.78.40, 10.28.78.50
+- **1 Control Node**: 10.28.78.10
+- **4 Managed Nodes**: 10.28.78.20, 10.28.78.30, 10.28.78.40, 10.28.78.50
 
 My VM has a single interface and configured as follow. Please replace the IP of your network in address, netmask, gateway and dns-nameservers for the proper configuration. 
 ```bash
