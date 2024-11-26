@@ -172,10 +172,19 @@ ansible-playbook playbook.yml > log.txt
 - **Inventory Management**: Organize nodes for scalability.
 - **Extensibility with Roles**: Reuse modular configurations.
 - **Configuration Management**: Customize behaviors via ansible.cfg.
+
 ### 🌟 Best Practices
 - **Use Group Variables**: Simplify configurations by defining variables in group_vars/.
 - **Always Test in Staging**: Verify playbooks in a non-production environment first.
 - **Use Roles for Reusability**: Split playbooks into roles for maintainability.
 - **Secure Sensitive Data**: Encrypt sensitive information with Ansible Vault.
+
+### Next Steps - you will learn to:
+- Write simple playbooks to automate tasks.** -> Ansible Playbooks
+- Explore Ansible modules for advanced configurations. -> Ansible Playbooks
+- Experiment with roles, templates, and Ansible Vault for secure data handling.** -> Ansible Playbooks
+- Real World Hand's on Labs for Ansible Training -> -> Ansible Labs
+
+
 
 ***Happy Automating!*** 🚀
