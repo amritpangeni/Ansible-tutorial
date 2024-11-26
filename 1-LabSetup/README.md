@@ -21,7 +21,7 @@ In this lab, we will create:
 
 All virtual machines will be within the **same reachable network** to ensure Ansible can communicate over SSH.  
 
-![Lab Architecture Diagram](#) ![alt text](image.png)  
+![Lab Architecture Diagram](#)(image.png)  
 ---
 
 ## ⚙️ Setting Up the Lab  
