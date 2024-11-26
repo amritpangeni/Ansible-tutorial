@@ -39,8 +39,8 @@ In, Ubuntu 20.02 , I configured static IP from interfaces file located in /etc/n
    vi /etc/network/interfaces
 ```
 I assigned the following IP addresses, 
-**Control Node:** 10.28.78.10
-**Managed Nodes:** 10.28.78.20, 10.28.78.30, 10.28.78.40, 10.28.78.50
+   - **Control Node:** 10.28.78.10  
+   - **Managed Nodes:** 10.28.78.20, 10.28.78.30, 10.28.78.40, 10.28.78.50
 
 My VM has a single interface and configured as follow. Please replace the IP of your network in address, netmask, gateway and dns-nameservers for the proper configuration. 
 ```bash
