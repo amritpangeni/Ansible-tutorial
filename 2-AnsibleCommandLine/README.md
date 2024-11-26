@@ -179,12 +179,11 @@ ansible-playbook playbook.yml > log.txt
 - **Use Roles for Reusability**: Split playbooks into roles for maintainability.
 - **Secure Sensitive Data**: Encrypt sensitive information with Ansible Vault.
 
-### Next Steps - you will learn to:
-- Write simple playbooks to automate tasks.** -> Ansible Playbooks
-- Explore Ansible modules for advanced configurations. -> Ansible Playbooks
-- Experiment with roles, templates, and Ansible Vault for secure data handling.** -> Ansible Playbooks
-- Real World Hand's on Labs for Ansible Training -> -> Ansible Labs
-
+### In Next Steps - you will learn to:
+- Write simple playbooks to automate tasks.** -> [Ansible Playbooks](../3-AnsiblePlaybook/README.md) 
+- Explore Ansible modules for advanced configurations. -> [Ansible Playbooks](../3-AnsiblePlaybook/README.md) 
+- Experiment with roles, templates, and Ansible Vault for secure data handling.** -> [Ansible Labs](../4-Labs/README.md) 
+- Real World Hand's on Labs for Ansible Training -> -> [Ansible Labs](../4-Labs/README.md)
 
 
 ***Happy Automating!*** 🚀
