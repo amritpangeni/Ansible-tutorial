@@ -195,8 +195,7 @@ ansible-playbook playbook.yml --check
 - Test Thoroughly: Use --check mode before applying changes.
 
 ### In Next Steps - you will learn to:
-- Experiment with roles, templates, and Ansible Vault for secure data handling.** -> [Ansible Labs](../4-labs/README.md) 
+- Experiment with roles, templates, and Ansible Vault for secure data handling.** -> [Ansible Labs](../4-Labs/README.md) 
 - Real World Hand's on Labs for Ansible Training -> -> [Ansible Labs](../4-Labs/README.md)
-
 
 ***Happy Automating!*** 🚀
