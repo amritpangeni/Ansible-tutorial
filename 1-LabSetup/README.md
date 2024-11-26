@@ -27,10 +27,32 @@ All virtual machines will be within the **same reachable network** to ensure Ans
 ## ⚙️ Setting Up the Lab  
 
 ### Step 1: Create Virtual Machines  
-1. Use **VMware vCenter** or any platform of your choice to create 5 virtual machines.
-   I am using VMware vCenter to create the five virtual machines required to setup the lab. You can create VMs anywhere or also can use physical machines as per your convenience.
+1. Using **VMware vCenter** or any platform of your choice to create 5 virtual machines.
+I am using VMware vCenter to create the five virtual machines required to setup the lab. You can create VMs anywhere or also can use physical machines as per your convenience.
    ![Creating VMs in Vcenter](image-1.png)
+I have installed (Ubuntu 20.04) for both control node and managed nodes. I cloned the master node into four more VMs after OS installation and renamed it as Master and Managed Nodes. 
 
+After that, I used the same subnet of network for all the VMs to ensure the connectivity and configured manually in all system as follows. 
+
+In, Ubuntu 20.02 , I configured static IP from interfaces file located in /etc/network/interfaces.
+```bash
+   vi /etc/network/interfaces
+```
+I assigned the following IP addresses, 
+**Control Node:** 10.28.78.10
+**Managed Nodes:** 10.28.78.20, 10.28.78.30, 10.28.78.40, 10.28.78.50
+
+My VM has a single interface and configured as follow. Please replace the IP of your network in address, netmask, gateway and dns-nameservers for the proper configuration. 
+```bash
+auto lo
+iface lo inet loopback
+auto eth0
+iface eth0 inet static
+address 10.28.78.10
+netmask 255.255.255.0
+gateway 10.28.78.1
+dns-nameservers 103.69.124.10 103.69.126.10
+```
    - **Control Node**: Install a Linux distribution (e.g., Ubuntu 20.04).  
    - **Managed Nodes**: Install the same or different Linux distributions based on your requirements.  
 2. Assign static IP addresses or configure a DHCP server to ensure the nodes are within the same network or could be in different network but can communicate with each other. 
@@ -59,6 +81,6 @@ Optionally, provide a passphrase for added security.
 Distribute the public SSH key to all managed nodes:
    ``` bash
    ssh-copy-id user@<managed_node_ip>
-
+   ```
 Replace user with the username and <managed_node_ip> with the IP address of the managed node. Repeat this for each node.
 
