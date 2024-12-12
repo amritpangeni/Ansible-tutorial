@@ -181,9 +181,9 @@ ansible-playbook playbook.yml > log.txt
 
 ### In Next Steps - you will learn to:
 - Write simple playbooks to automate tasks.** -> [Ansible Playbooks](../3-AnsiblePlaybook/README.md) 
-- Explore Ansible modules for advanced configurations. -> [Ansible Playbooks](../3-AnsiblePlaybook/README.md) 
-- Experiment with roles, templates, and Ansible Vault for secure data handling.** -> [Ansible Labs](../4-Labs/README.md) 
-- Real World Hand's on Labs for Ansible Training -> -> [Ansible Labs](../4-Labs/README.md)
+- Explore Ansible modules for advanced configurations. -> [Ansible Playbooks](../2-AnsiblePlaybook/README.md) 
+- Experiment with roles, templates, and Ansible Vault for secure data handling.** -> [Ansible Labs](../3-Labs/README.md) 
+- Real World Hand's on Labs for Ansible Training -> -> [Ansible Labs](../3-Labs/README.md)
 
 
 ***Happy Automating!*** 🚀
