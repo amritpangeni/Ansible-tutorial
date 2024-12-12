@@ -7,7 +7,7 @@ Welcome to the **Labs** section of our Ansible tutorial repository! This directo
 ## 📋 Prerequisites  
 
 Before you begin the labs, ensure you have the following in place:  
-1. A fully configured **Ansible Lab Environment** (refer to the [1-LabSetup](../README.md)).  
+1. A fully configured **Ansible Lab Environment** (refer to the [1-LabSetup](../1-LabSetup/README.md)).  
 2. Ansible installed and functioning on your **control node**.  
 3. Passwordless SSH access from the control node to all managed nodes.  
 4. Basic understanding of YAML and Ansible playbooks.  
